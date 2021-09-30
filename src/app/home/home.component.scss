@@ -1,0 +1,25 @@
+@import '../vars.scss';
+
+.searchbar{
+  text-align: center;
+  input{
+    text-align: center;
+    height: 25px;
+    width: 20%;
+    border: 2px solid #909090;
+    border-radius: 8px;
+  }
+  button{
+    background-color: #cecece;
+    color: black;
+    padding: 4px 25px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #909090;
+    }
+  }
+}

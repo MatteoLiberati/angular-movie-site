@@ -1,0 +1,15 @@
+<div *ngIf="myMovie != undefined" class="container">
+  <h1>{{myMovie.title}}</h1>
+  <div class="container-my-movie">
+    <img src="https://image.tmdb.org/t/p/w500{{myMovie.poster_path}}" alt="{{myMovie.title}}">
+    <div class="content">
+      <h4>Trama</h4>
+      <div class="overview">{{myMovie.overview}}</div>
+      <hr>
+      <div class="text-center">data di uscita: <strong>{{myMovie.release_date}}</strong></div>
+      <div class="text-center">votato <strong>{{myMovie.vote_average}}</strong> su {{myMovie.vote_count}} voti</div>
+      <div class="text-center"><button routerLink="/">Torna alla home</button></div>
+    </div>
+  </div>
+
+</div>

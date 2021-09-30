@@ -1,0 +1,13 @@
+<div class="movie-container" *ngIf="movies.length > 0">
+  <div class="single-movie" *ngFor="let movie of movies">
+    <h5>{{movie.name}}</h5>
+    <a routerLink="/dettagli/{{movie.id}}">
+      <img *ngIf="movie.image; else noCover" src="https://image.tmdb.org/t/p/w200{{movie.image}}" alt="{{movie.name}}">
+      <ng-template #noCover>
+        <div class="container-no-cover">
+          <img class="no-cover" src="http://vignette2.wikia.nocookie.net/e__/images/8/86/No_cover.png/revision/latest?cb=20130103223703&path-prefix=eminem" alt="no-cover">
+        </div>
+      </ng-template>
+    </a>
+  </div>
+</div>

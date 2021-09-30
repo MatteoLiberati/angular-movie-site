@@ -1,0 +1,14 @@
+<h1>Cerca nella nostra libreria</h1>
+<div class="searchbar">
+  <input (keydown.enter)="clickSearch()" [(ngModel)]="inputSearch" type="text" placeholder="Cerca il tuo film">
+  <button (click)="clickSearch()"><i class="fas fa-search"></i></button>
+</div>
+
+<div class="container">
+  <app-movies *ngIf="!loader; else Loader" [movies]="myMovies" ></app-movies>
+
+  <ng-template #Loader>
+    <app-loader></app-loader>
+  </ng-template >
+</div>
+

@@ -1,0 +1,24 @@
+.container-my-movie{
+  display: flex;
+  .content{
+    padding: 40px;
+    h4,
+    .text-center{
+      text-align: center;
+    }
+    .overview{
+      margin: 20px 0;
+    }
+    button{
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      padding: 8px 10px;
+      cursor: pointer;
+      background-color: #cfcdcd;
+      &:hover{
+        background-color: #a8a7a7;
+      }
+    }
+  }
+}
